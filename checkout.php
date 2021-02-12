@@ -53,7 +53,7 @@ $arreglo= $_SESSION['carrito'];
               <div class="form-group">
                 <label for="c_country" class="text-black">Pais <span class="text-danger">*</span></label>
                 <select id="c_country" class="form-control" name="country">
-                  <option value="1">Seleccionar Ciudad</option>    
+                  <option value="1">Seleccionar Pais</option>    
                   <option value="2">Argentina</option>    
                   <option value="3">Chile</option>    
                   <option value="4">Bolivia</option>    
@@ -67,25 +67,25 @@ $arreglo= $_SESSION['carrito'];
               <div class="form-group row">
                 <div class="col-md-6">
                   <label for="c_fname" class="text-black">Nombres <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_fname" name="c_fname">
+                  <input type="text" class="form-control" id="c_fname" name="c_fname" required>
                 </div>
                 <div class="col-md-6">
                   <label for="c_lname" class="text-black">Apellidos <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_lname" name="c_lname">
+                  <input type="text" class="form-control" id="c_lname" name="c_lname"required>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_companyname" class="text-black">Nompre de empresa </label>
-                  <input type="text" class="form-control" id="c_companyname" name="c_companyname">
+                  <input type="text" class="form-control" id="c_companyname" name="c_companyname"required>
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
                   <label for="c_address" class="text-black">Direccion <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Ej- Calle 30c #23- 4">
+                  <input type="text" class="form-control" id="c_address" name="c_address" placeholder="Ej- Calle 30c #23- 4" required>
                 </div>
               </div>
 
@@ -105,109 +105,29 @@ $arreglo= $_SESSION['carrito'];
               <div class="form-group row mb-5">
                 <div class="col-md-6">
                   <label for="c_email_address" class="text-black">Email  <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_email_address" name="c_email_address">
+                  <input type="text" class="form-control" id="c_email_address" name="c_email_address" required>
                 </div>
                 <div class="col-md-6">
                   <label for="c_phone" class="text-black">Tel <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="300----">
+                  <input type="text" class="form-control" id="c_phone" name="c_phone" placeholder="300----" required>
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="c_create_account" class="text-black" data-toggle="collapse" href="#create_an_account" role="button" aria-expanded="false" aria-controls="create_an_account"><input type="checkbox" value="1" id="c_create_account"> Create an account?</label>
+                <label for="c_create_account" class="text-black" data-toggle="collapse" href="#create_an_account" role="button" aria-expanded="false" aria-controls="create_an_account"><input type="checkbox" value="1" id="c_create_account"> Crea tu cuenta</label>
                 <div class="collapse" id="create_an_account">
                   <div class="py-2">
                     <p class="mb-3">Cree una cuenta ingresando la información a continuación. Si es un cliente recurrente, inicie sesión en la parte superior de la página.</p>
                     <div class="form-group">
                       <label for="c_account_password" class="text-black">Contraseña de la Cuenta</label>
-                      <input type="password" class="form-control" id="c_account_password" name="c_account_password" placeholder="">
+                      <input type="password" class="form-control" id="c_account_password" name="c_account_password" placeholder="" required>
                     </div>
                   </div>
                 </div>
               </div>
 
 
-              <div class="form-group">
-                <label for="c_ship_different_address" class="text-black" data-toggle="collapse" href="#ship_different_address" role="button" aria-expanded="false" aria-controls="ship_different_address"><input type="checkbox" value="1" id="c_ship_different_address"> Ship To A Different Address?</label>
-                <div class="collapse" id="ship_different_address">
-                  <div class="py-2">
-
-                    <div class="form-group">
-                      <label for="c_diff_country" class="text-black">Country <span class="text-danger">*</span></label>
-                      <select id="c_diff_country" class="form-control">
-                        <option value="1">Select a country</option>    
-                        <option value="2">bangladesh</option>    
-                        <option value="3">Algeria</option>    
-                        <option value="4">Afghanistan</option>    
-                        <option value="5">Ghana</option>    
-                        <option value="6">Albania</option>    
-                        <option value="7">Bahrain</option>    
-                        <option value="8">Colombia</option>    
-                        <option value="9">Dominican Republic</option>    
-                      </select>
-                    </div>
-
-
-                    <div class="form-group row">
-                      <div class="col-md-6">
-                        <label for="c_diff_fname" class="text-black">First Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_fname" name="c_diff_fname">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="c_diff_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_lname" name="c_diff_lname">
-                      </div>
-                    </div>
-
-                    <div class="form-group row">
-                      <div class="col-md-12">
-                        <label for="c_diff_companyname" class="text-black">Company Name </label>
-                        <input type="text" class="form-control" id="c_diff_companyname" name="c_diff_companyname">
-                      </div>
-                    </div>
-
-                    <div class="form-group row">
-                      <div class="col-md-12">
-                        <label for="c_diff_address" class="text-black">Address <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_address" name="c_diff_address" placeholder="Street address">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Apartment, suite, unit etc. (optional)">
-                    </div>
-
-                    <div class="form-group row">
-                      <div class="col-md-6">
-                        <label for="c_diff_state_country" class="text-black">State / Country <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_state_country" name="c_diff_state_country">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="c_diff_postal_zip" class="text-black">Posta / Zip <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_postal_zip" name="c_diff_postal_zip">
-                      </div>
-                    </div>
-
-                    <div class="form-group row mb-5">
-                      <div class="col-md-6">
-                        <label for="c_diff_email_address" class="text-black">Email Address <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_email_address" name="c_diff_email_address">
-                      </div>
-                      <div class="col-md-6">
-                        <label for="c_diff_phone" class="text-black">Phone <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" id="c_diff_phone" name="c_diff_phone" placeholder="Phone Number">
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="c_order_notes" class="text-black">Order Notes</label>
-                <textarea name="c_order_notes" id="c_order_notes" cols="30" rows="5" class="form-control" placeholder="Write your notes here..."></textarea>
-              </div>
+              
 
             </div>
           </div>
