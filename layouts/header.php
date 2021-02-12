@@ -6,7 +6,7 @@
             <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
               <form action="./busqueda.php" class="site-block-top-search" method="GET">
                 <span class="icon icon-search2"></span>
-                <input type="text" class="form-control border-0" placeholder="Search" name="texto">
+                <input type="text" class="form-control border-0" placeholder="Buscar" name="texto">
               </form>
             </div>
 
@@ -39,7 +39,7 @@
         <div class="container">
           <ul class="site-menu js-clone-nav d-none d-md-block">
             <li>
-              <a href="index.php">Home</a>
+              <a href="index.php">Inicio</a>
             
             </li>
             <li>
@@ -47,9 +47,9 @@
             
             </li>
           
-            <li><a href="#">Catalogue</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="index.php">Catalogo</a></li>
+            <li><a href="#">Los recién llegados</a></li>
+            <li><a href="contact.php">Contacto</a></li>
           </ul>
         </div>
       </nav>

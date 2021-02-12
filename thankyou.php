@@ -14,12 +14,14 @@ $password="";
     $password = $_POST['c_account_password'];
   }
  }
- $conexion->query("insert into usuario (nombre,telefono,email,password)
+ $conexion->query("insert into usuario (nombre,telefono,email,password,img_perfil,nivel)
  values(
    '".$_POST['c_fname']." ".$_POST['c_lname']."',
    '".$_POST['c_phone']."',
    '".$_POST['c_email_address']."',
-   '".sha1($password)."'
+   '".sha1($password)."',
+   'default.jpg',
+   'cliente'
  )
  ")or die($conexion->error);
  $id_usuario = $conexion->insert_id;
@@ -51,6 +53,7 @@ $conexion->query("INSERT into envios(pais,company, direccion,estado,cp,id_venta)
   $id_venta
 )
 ")or die($conexion->error); // si no encuentra la conexion envia un error
+include"./php/mail.php";
 unset($_SESSION['carrito']);// borra la sesion y coloca el carrito en 0
 ?>
 
@@ -88,7 +91,7 @@ unset($_SESSION['carrito']);// borra la sesion y coloca el carrito en 0
             <span class="icon-check_circle display-3 text-success"></span>
             <h2 class="display-3 text-black">¡Gracias por su Compra!</h2>
             <p class="lead mb-5">Su orden ha sido completada exitosamente.</p>
-            <p><a href="shop.html" class="btn btn-sm btn-primary">regresar a la tienda.</a></p>
+            <p><a href="verpedido.php?id_venta=<?php echo $id_venta; ?>" class="btn btn-sm btn-primary">Ver pedido.</a></p>
           </div>
         </div>
       </div>

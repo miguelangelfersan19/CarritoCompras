@@ -1,0 +1,29 @@
+-Instrucciones
+
+- Tematica: Carrito de compras implementado a una tienda de ropa.
+- base de datos (carrito_compra.sql)
+
+-Descarga de papercut para servidor local (Prueba de correo)
+https://github.com/ChangemakerStudios/Papercut-SMTP/releases
+
+- implementacion del login (ok)
+por sessiones de usuario en esta caso por correo y contraseña
+usuario por defecto: miguelangelfersan19@gmail.com
+Contraseña: 123456789
+observacion: Queria adicionar la implementacion de roles de usuarios con los
+permisos para cada uno, sin embargo el usuasirio inicia y sale de la session
+correctamente y si no es correcto, no desajra entrar a la dashboard, que vendria siendo 
+implementacion de registros de productos, categoria etc
+http://localhost/carritoCompras/login.php
+
+
+- tienda virtual
+http://localhost/carritoCompras/
+
+-Observaciones 
+-registra los usuarios en la pagina (ok)
+-busqueda de articulos (ok)
+-genera el presupuesto mas el iva (ok)
+-implementa accion de envio de correo con la compra realizada (ok)
+-Muestra el estado de la compra (ok)
+-Addicciona productos al carrito de compras (ok)
