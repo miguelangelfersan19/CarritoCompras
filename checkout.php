@@ -94,11 +94,11 @@ $arreglo= $_SESSION['carrito'];
               <div class="form-group row">
                 <div class="col-md-6">
                   <label for="c_state_country" class="text-black">Ciudad <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_state_country" name="c_state_country">
+                  <input type="text" class="form-control" id="c_state_country" name="c_state_country" required>
                 </div>
                 <div class="col-md-6">
                   <label for="c_postal_zip" class="text-black">Postal / Zip <span class="text-danger">*</span></label>
-                  <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip">
+                  <input type="text" class="form-control" id="c_postal_zip" name="c_postal_zip" required>
                 </div>
               </div>
 
